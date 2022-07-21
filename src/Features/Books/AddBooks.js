@@ -15,7 +15,7 @@ const handleSubmit =(e) => {
     e.preventDefault();
     const book ={ id: numberOfBooks + 1, title, author};
     dispatch(addBook(book));
-    navigate('/show-books')
+    navigate('/show-books', {replace: true})
 }
 
     return (
